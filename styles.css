@@ -1,0 +1,68 @@
+body {
+  background-color: #156257;
+  color: white;
+  width: 100%;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+h1, p {
+  text-align: center;
+}
+
+#survey-form {
+  width: 45%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #0c3933;
+  border-radius: 10px;
+}
+
+/* Uniform labels */
+label {
+  display: block;
+  margin: 15px 0;
+}
+
+/* Consistent input styling */
+input:not([type="radio"]):not([type="checkbox"]), 
+select, 
+textarea {
+  width: 100%;
+  border-radius: 4px;
+  margin: 5px 0;
+  height: 2em;
+}
+
+textarea {
+  height: 5em;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 10px 0;
+}
+
+/* Radio/Checkbox alignment */
+input[type="radio"], 
+input[type="checkbox"] {
+  width: auto;
+  margin: 0 5px 0 0;
+  height: auto;
+}
+
+.aiuse label,
+.how-use-ai label {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 50%;
+  margin: 20px auto;
+  height: 2em;
+  font-size: 1.1rem;
+}

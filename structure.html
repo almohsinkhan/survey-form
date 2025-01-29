@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Impact of AI on Student Learning</h1>
+      <p id="description">This survey explores how AI tools influence student learning and education.</p>
+    <form id="survey-form" action="" method="POST">
+      <fieldset>
+        <label id="name-label" for="name">Name 
+          <input type="text" id="name" placeholder="Enter Your Name" required/>
+        </label>
+        <label id="email-label" for="email" >Email
+           <input type="email" id="email" placeholder="Enter Your Email" required />
+        </label>
+        <label id="number-label" for="number" >Age 
+          <input type="number" id="number" placeholder="Enter Your Age (Year)" min=13 max= 100 />
+        </label>
+      </fieldset>
+      <fieldset class="aiuse">
+        <legend>Have you ever used AI-powered tools (ChatGPT, Grammarly, Khan Academy, etc.) for learning?</legend>
+        <label for="yes"><input type="radio" id="yes" name="useAI" value="yes" checked >Yes</label>
+         <label for="no"><input type="radio" id="no" name="useAI" value="no">No</label>
+         </fieldset>
+<fieldset class="improvment">
+        <legend>Do you feel AI tools improve your understanding of subjects?</legend>
+        <label for="agree"><input type="radio" id="agree" name="improvment" value="yes" checked >Yes</label>
+         <label for="no"><input type="radio" id="no" name="improvment" value="no">No</label>
+         </fieldset>
+        <label>
+         <fieldset>
+        <legend>How often do you use AI tools for academic purposes? </legend>
+        <label>
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option>Daily</option>
+            <option>Weekly</option>
+            <option>Occasionally</option>
+            <option>Never</option>
+          </select>
+          </label>
+        </fieldset>
+      <fieldset>
+        <legend>What are the biggest challenges of using AI in education?
+</legend>
+<textarea></textarea>
+      </fieldset>
+      <fieldset class="how-use-ai">
+        <legend>How do you use AI tools in your studies?
+</legend>
+<label><input type="checkbox" name="howuse " value="Writing assistance" >Writing assistance (e.g., Grammarly, ChatGPT)</label>
+<label><input type="checkbox" name="howuse " value="Research and information gathering"> Research and information gathering
+</label>
+<label><input type="checkbox" name="howuse " value="Coding and debugging" >Coding and debugging (e.g., GitHub Copilot)</label>
+<label><input type="checkbox" name="howuse " value="Solving math problems"> Solving math problems (e.g., Wolfram Alpha)
+</label>
+<label><input type="checkbox" name="howuse " value="Language translation and learning">Language translation and learning (e.g., Google Translate, Duolingo)</label>
+<label><input type="checkbox" name="howuse " value="Taking notes and summarization"> Taking notes and summarization (e.g., Notion AI, ChatGPT)
+</label> 
+<label><input type="checkbox" name="howuse " value="Exam preparation and quizzes" > Exam preparation and quizzes (e.g., Khan Academy, Quizlet)
+</label>
+<label><input type="checkbox" name="howuse " value="other"> Other: _______
+</label>       
+
+      </fieldset>
+            <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
